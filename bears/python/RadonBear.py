@@ -60,7 +60,7 @@ class RadonBear(LocalBear):
                 continue
             elif (cyclomatic_complexity and
                     visitor.complexity <= cyclomatic_complexity):
-                severity = RESULT_SEVERITY.INFO
+                continue
             else:
                 severity = RESULT_SEVERITY.MAJOR
 
